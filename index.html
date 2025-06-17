@@ -92,6 +92,15 @@
       box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
     }
 
+    p {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: unset;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 1rem 0;
+    }
+
     canvas {
       position: fixed;
       top: 0;
@@ -125,7 +134,6 @@
 </head>
 <body>
 
-  <!-- Apology Screen -->
   <div id="apologyScreen" style="position:fixed; top:0; left:0; width:100%; height:100%; background:#000; display:flex; flex-direction:column; align-items:center; justify-content:center; color:white; z-index:9999;">
     <h1 style="font-family:'Great Vibes', cursive; font-size:3rem;">I'm Sorry 😔</h1>
     <div style="margin-top: 2rem;">
@@ -134,7 +142,6 @@
     </div>
   </div>
 
-  <!-- Main Content -->
   <div id="mainContent" style="display:none;">
     <audio autoplay loop>
       <source src="https://ia801209.us.archive.org/35/items/KanyeWestWhyILoveYou/Kanye%20West%20-%20Why%20I%20Love%20You.mp3" type="audio/mpeg">
@@ -150,25 +157,25 @@
       <div id="section1" class="section">
         <div class="leaf-point">🌟 18 November 2024 — First Time We Talked</div>
         <img src="snap.jpg" alt="First Talk" class="memory">
-        <p>Who would've thought that we were one click away... we are meant to be.</p>
+        <p>Who would've thought that we were one click away from each other that on "accept" will merge our fates together bring us closer and make us unseparable , it wasn't a coincidence that both of us got out of our ways our routin and met it was meant to be we are meant to be.</p>
       </div>
 
       <div id="section2" class="section">
         <div class="leaf-point">💞 25 December 2024 — When We Confessed Our Love</div>
         <img src="batman.jpg" alt="Love Confession" class="memory">
-        <p>That day was just the happiest day of my life... I'm glad we didn't hide it.</p>
+        <p>that day was just the happiest day of my life yes EVRYTHING indicated that we loved each other that was undeniable what we had and still having, that day i sent that pic with "why i love you" song, you were like is this a confession and i answered without no fear yes yes ma'am it is and you did hold back too you said i love you too , our love is soo big we couldnt hide it anymore and im glad we didn't.</p>
       </div>
 
       <div id="section3" class="section">
         <div class="leaf-point">🤗 9 January 2025 — The First Time We Met</div>
         <img src="firstdate.jpg" alt="First Meeting" class="memory">
-        <p>Your presence in real life felt like a dream... now finally I'm home.</p>
+        <p>Your presence in real life felt like a dream I never wanted to end you gave me sense of tranquility of happiness of safeness you are the home i was lost looking for and now finaly im home. I saw my future in your eyes and i saw you in that futere i see you in it everytime i try to look forward ur always there on my side.</p>
       </div>
 
       <div id="section4" class="section">
         <div class="leaf-point">💑 20 February 2025 — The Second Time Together</div>
         <img src="secondate.jpg" alt="Second Meeting" class="memory">
-        <p>We met again, stronger, closer... God I love her, I need her.</p>
+        <p>We met again, stronger, closer. and yet it was just like the first time i was stunned by her beaty by her charm im not even exaggeratin when i say she was shining ,she is an angel my angel i just wanted to stop time and just live in that moment forever just me and her god i love her i need her.</p>
       </div>
 
       <div id="section5" class="section">
@@ -197,7 +204,6 @@
       }
     }
 
-    // Floating heart animation
     const canvas = document.getElementById('leaves');
     const ctx = canvas.getContext('2d');
     let hearts = [];
@@ -241,7 +247,6 @@
 
     draw();
 
-    // Apology logic
     function acceptApology() {
       document.getElementById('apologyScreen').style.display = 'none';
       document.getElementById('mainContent').style.display = 'block';
